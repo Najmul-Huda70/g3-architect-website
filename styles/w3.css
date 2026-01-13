@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Shared styles */
+.dark-01 {
+  color: #131313;
+}
+.dark-02 {
+  color: #424242;
+}
+.dark-03 {
+  color: #727272;
+}
+.dark-04 {
+  color: #a1a1a1;
+}
+.dark-05 {
+  color: #d0d0d0;
+}
+.dark-06 {
+  color: #e7e7e7;
+}
+.dark-07 {
+  color: #f3f3f3;
+}
+.white {
+  color: #ffffff;
+}
+.display-flex {
+  display: flex;
+}
+.small-text {
+  font-size: 1rem;
+  line-height: 26px;
+}
+/* header styles */
+.bg-color {
+  background-color: rgba(255, 144, 14, 0.1);
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
+/* navbar related styles */
+.navbar {
+  justify-content: space-between;
+}
+.nav-items {
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #424242;
+}
+.navbar,
+.bannar {
+  max-width: 1366px;
+  margin: 0px auto;
+}
+/* bannar related styles */
+.bannar-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 45px;
+  margin-top: 60px;
+}
+.bannar-title {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.bannar-description {
+  margin-bottom: 27px;
+}
+.button-primary {
+  background-color: rgba(255, 144, 14, 1);
+  width: 127px;
+  height: 45px;
+  padding: 15px 18px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.bannar-image {
+  width: 100%;
+}
