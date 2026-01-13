@@ -5,11 +5,11 @@
   font-weight: 400;
   font-style: normal;
 }
-* {
+/* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-}
+} */
 /* Shared styles */
 .dark-01 {
   color: #131313;
@@ -35,6 +35,9 @@
 .white {
   color: #ffffff;
 }
+.text-primary {
+  color: #ff900e;
+}
 .display-flex {
   display: flex;
 }
@@ -45,51 +48,89 @@
 /* header styles */
 .bg-color {
   background-color: rgba(255, 144, 14, 0.1);
-  padding-top: 50px;
-  margin-bottom: 10px;
 }
 /* navbar related styles */
 .navbar {
   justify-content: space-between;
+  align-items: center;
 }
 .nav-items {
   list-style: none;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 .nav-link {
   text-decoration: none;
   color: #424242;
 }
 .navbar,
-.bannar {
-  max-width: 1366px;
-  margin: 0px auto;
+.bannar,
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.brand {
+  font-size: 3rem;
+  font-weight: 700;
 }
 /* bannar related styles */
 .bannar-content {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 45px;
-  margin-top: 60px;
 }
 .bannar-title {
   font-weight: 700;
   font-size: 4rem;
-  margin-bottom: 20px;
 }
-.bannar-description {
-  margin-bottom: 27px;
-}
+
 .button-primary {
   background-color: rgba(255, 144, 14, 1);
-  width: 127px;
-  height: 45px;
-  padding: 15px 18px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 20px 25px;
   border: none;
-  border-radius: 7px;
+  border-radius: 8px;
   cursor: pointer;
 }
 .bannar-image {
   width: 100%;
+}
+/* main */
+main > section {
+  padding-top: 130px;
+}
+/* team and feature releted styles */
+.teams {
+  align-items: center;
+}
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.our-features {
+  margin-left: 100px;
+  max-width: 500px;
+}
+.feature-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+#quick-list {
+  font-weight: 500;
+}
+/* Responsive media query */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links,
+  .teams {
+    flex-direction: column;
+  }
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features {
+    margin-left: 18px;
+  }
 }
